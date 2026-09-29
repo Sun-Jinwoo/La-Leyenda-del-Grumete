@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bitácora · La Leyenda del Grumete</title>
+<meta name="description" content="Bitácora de desarrollo de La Leyenda del Grumete.">
+<meta name="theme-color" content="#0b2a3a">
+<meta property="og:title" content="La Leyenda del Grumete">
+<meta property="og:description" content="Bitácora de desarrollo de La Leyenda del Grumete.">
+<meta property="og:image" content="img/hero.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lora:ital,wght@0,400;0,600;1,400&family=Pirata+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="sr skip" href="#main">Saltar al contenido</a>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html">⚓ El Grumete</a>
+    <button class="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">☰</button>
+    <nav aria-label="Principal"><ul id="menu"><li><a href="index.html">Inicio</a></li><li><a href="concepto.html">Concepto</a></li><li><a href="bitacora.html" aria-current="page">Bitácora</a></li><li><a href="demo.html">Demo</a></li><li><a href="teaser.html">Teaser</a></li></ul></nav>
+  </div>
+</header>
+<main id="main">
+<div class="page-head"><div class="wrap"><span class="eyebrow">Desarrollo</span><h1>Bitácora</h1><p>Registro de cada iteración: qué queríamos probar, qué hicimos, qué ocurrió, qué aprendimos y qué cambiaremos.</p></div></div>
+<section class="block">
+  <div class="wrap" style="max-width:900px">
+    <div class="card reveal" style="margin-bottom:2rem">
+      <h3>Índice de iteraciones</h3>
+      <ul class="pending" style="padding:0;margin:0">
+        <li>📌 <a href="#v0-1"><strong>Graybox v0.1</strong> — Core Loop</a> · Semana 1</li>
+        <li style="opacity:.55">⏳ Graybox v0.2 — próximamente</li>
+      </ul>
+    </div>
+
+    <!-- ============ PLANTILLA para nuevas entradas (copiar y pegar arriba de la más antigua) ============
+    <article class="entry" id="vX-X">
+      <div class="entry-head"><h3>Graybox vX.X — Título</h3><span class="chip">Semana N · dd/mm/aaaa</span></div>
+      <div class="entry-body"><div class="qa">
+        <div><h4>¿Qué queríamos probar?</h4><p>...</p></div>
+        <div><h4>¿Qué implementamos?</h4><p>...</p></div>
+        <div><h4>Evidencia</h4><div class="evidence"><figure class="frame"><img src="img/evidencia-vX.jpg" alt="..."><figcaption>...</figcaption></figure></div></div>
+        <div><h4>¿Qué observamos o descubrimos?</h4><p>...</p></div>
+        <div><h4>¿Qué cambiaremos en la siguiente versión?</h4><ol class="next"><li>...</li><li>...</li><li>...</li></ol></div>
+      </div></div>
+    </article>
+    ============================================================================================== -->
+
+    <article class="entry reveal" id="v0-1">
+      <div class="entry-head">
+        <h3>Graybox v0.1 — Core Loop</h3>
+        <span><span class="chip">Semana 1</span> <span class="chip warn">Borrador · completar con datos reales</span></span>
+      </div>
+      <div class="entry-body">
+        <div class="qa">
+          <div>
+            <h4>1 · ¿Qué queríamos probar?</h4>
+            <p>Queríamos comprobar si el jugador entiende el ciclo básico del juego: <strong>llegar a un lugar → superar un reto → ganar una habilidad → ver cómo el mapa revela la siguiente ruta</strong>, y si esa recompensa resulta clara y satisfactoria.</p>
+          </div>
+          <div>
+            <h4>2 · ¿Qué implementamos?</h4>
+            <p>Un graybox (figuras simples, sin arte final) del Nivel 1 — Caleta Gris:</p>
+            <ul>
+              <li>Movimiento de Kai: caminar, correr, saltar y trepar.</li>
+              <li>Tres pruebas en cualquier orden: agilidad (trepar el mástil), combate (duelo de práctica) y sigilo (evitar al sereno con farol).</li>
+              <li>Al completar las tres, el mapa se actualiza y aparece la siguiente isla.</li>
+            </ul>
+            <p><span class="todo">Ajusten esta lista a lo que realmente tiene su graybox.</span></p>
+          </div>
+          <div>
+            <h4>3 · Evidencia</h4>
+            <div class="evidence">
+              <figure class="frame"><img src="img/core-loop.jpg" alt="Diagrama del Core Loop de seis pasos" loading="lazy"><figcaption style="background:var(--card);margin:0;padding:.5rem">Diagrama del Core Loop que guía el graybox.</figcaption></figure>
+              <figure class="frame"><img src="img/nivel1-flujo.jpg" alt="Diagrama de flujo del nivel 1" loading="lazy"><figcaption style="background:var(--card);margin:0;padding:.5rem">Flujo del Nivel 1: tres pruebas en cualquier orden.</figcaption></figure>
+              <div class="placeholder"><div><b>📸 Captura o GIF del graybox</b>Guarden la imagen en <code>img/</code> y reemplacen este recuadro por <code>&lt;figure class="frame"&gt;&lt;img src="img/graybox-v0-1.gif"&gt;&lt;/figure&gt;</code></div></div>
+            </div>
+          </div>
+          <div>
+            <h4>4 · ¿Qué observamos o descubrimos?</h4>
+            <ul>
+              <li><strong>Funcionó:</strong> <span class="todo">ej. el jugador entendió que debía completar las tres pruebas.</span></li>
+              <li><strong>Problema:</strong> <span class="todo">ej. no quedó claro qué ocurría al terminar cada prueba; falta feedback de que el mapa cambia.</span></li>
+            </ul>
+          </div>
+          <div>
+            <h4>5 · ¿Qué cambiaremos en la siguiente versión?</h4>
+            <ol class="next">
+              <li><span class="todo">Agregar feedback visual cuando el mapa revela una nueva ruta.</span></li>
+              <li><span class="todo">Ajustar la dificultad de la prueba de sigilo.</span></li>
+              <li><span class="todo">Indicar el progreso de las tres pruebas en pantalla.</span></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <div class="empty-next reveal">
+      <strong>Próxima entrada: Graybox v0.2</strong><br>
+      Cada avance importante deja una pequeña evidencia aquí.
+    </div>
+  </div>
+</section>
+
+</main>
+<footer>
+  <div class="wrap">
+    <a class="brand" href="index.html">⚓ La Leyenda del Grumete</a>
+    <p>Bitácora de desarrollo · Proyecto de videojuego · Semestre 2026-2</p>
+    <p><small>Documentación en construcción. Se actualiza cada semana.</small></p>
+  </div>
+</footer>
+<script src="js/anime.min.js" defer></script>
+<script src="app.js" defer></script>
+</body>
+</html>

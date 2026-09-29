@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Demo · La Leyenda del Grumete</title>
+<meta name="description" content="Demo jugable de La Leyenda del Grumete.">
+<meta name="theme-color" content="#0b2a3a">
+<meta property="og:title" content="La Leyenda del Grumete">
+<meta property="og:description" content="Demo jugable de La Leyenda del Grumete.">
+<meta property="og:image" content="img/hero.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lora:ital,wght@0,400;0,600;1,400&family=Pirata+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="sr skip" href="#main">Saltar al contenido</a>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html">⚓ El Grumete</a>
+    <button class="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">☰</button>
+    <nav aria-label="Principal"><ul id="menu"><li><a href="index.html">Inicio</a></li><li><a href="concepto.html">Concepto</a></li><li><a href="bitacora.html">Bitácora</a></li><li><a href="demo.html" aria-current="page">Demo</a></li><li><a href="teaser.html">Teaser</a></li></ul></nav>
+  </div>
+</header>
+<main id="main">
+<div class="page-head"><div class="wrap"><span class="eyebrow">Jugable</span><h1>Demo</h1><p>El estado jugable del proyecto. Se irá actualizando en cada entrega.</p></div></div>
+<section class="block">
+  <div class="wrap" style="max-width:960px">
+    <div class="frame reveal">
+      <div class="screen" style="background-image:url(img/nivel1-escena.jpg)">
+        <div>
+          <div class="play">▶</div>
+          <h3>Demo próximamente</h3>
+          <p>Aquí aparecerá la build jugable de <em>La Leyenda del Grumete</em>.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Cuando tengan la build: reemplacen el <div class="screen"> por
+         <div class="screen"><iframe src="URL_DE_ITCH_O_WEBGL" allowfullscreen title="Demo"></iframe></div> -->
+    <div class="grid g2" style="margin-top:2rem">
+      <div class="card reveal">
+        <h3>Estado actual</h3>
+        <ul class="status">
+          <li class="done">Concepto</li><li class="done">Graybox Core Loop</li><li>Nivel 1 jugable</li><li>Sigilo</li><li>Navegación</li><li>Arte final</li>
+        </ul>
+        <p style="margin-top:1rem"><span class="todo">Actualicen las etiquetas (clase <code>done</code>) según avancen.</span></p>
+      </div>
+      <div class="card reveal">
+        <h3>Controles</h3>
+        <dl class="controls">
+          <dt>Mover</dt><dd><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd></dd>
+          <dt>Saltar / trepar</dt><dd><kbd>Espacio</kbd></dd>
+          <dt>Atacar</dt><dd><kbd>Clic</kbd></dd>
+          <dt>Agacharse</dt><dd><kbd>Ctrl</kbd></dd>
+        </dl>
+        <p style="margin-top:1rem"><span class="todo">Cambien los controles por los reales.</span></p>
+      </div>
+    </div>
+    <div class="card reveal" style="margin-top:1.25rem"><h3>Versión y notas</h3><p>Versión: <strong>—</strong> · Plataforma: <span class="todo">Windows / WebGL</span> · Enlace de descarga: <span class="todo">pendiente</span></p></div>
+  </div>
+</section>
+
+</main>
+<footer>
+  <div class="wrap">
+    <a class="brand" href="index.html">⚓ La Leyenda del Grumete</a>
+    <p>Bitácora de desarrollo · Proyecto de videojuego · Semestre 2026-2</p>
+    <p><small>Documentación en construcción. Se actualiza cada semana.</small></p>
+  </div>
+</footer>
+<script src="js/anime.min.js" defer></script>
+<script src="app.js" defer></script>
+</body>
+</html>

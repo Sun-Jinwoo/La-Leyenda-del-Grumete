@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Inicio · La Leyenda del Grumete</title>
+<meta name="description" content="La Leyenda del Grumete: aventura y metroidvania pirata donde un mapa vivo revela islas cuando Kai demuestra su destreza.">
+<meta name="theme-color" content="#0b2a3a">
+<meta property="og:title" content="La Leyenda del Grumete">
+<meta property="og:description" content="La Leyenda del Grumete: aventura y metroidvania pirata donde un mapa vivo revela islas cuando Kai demuestra su destreza.">
+<meta property="og:image" content="img/hero.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lora:ital,wght@0,400;0,600;1,400&family=Pirata+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="sr skip" href="#main">Saltar al contenido</a>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html">⚓ El Grumete</a>
+    <button class="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">☰</button>
+    <nav aria-label="Principal"><ul id="menu"><li><a href="index.html" aria-current="page">Inicio</a></li><li><a href="concepto.html">Concepto</a></li><li><a href="bitacora.html">Bitácora</a></li><li><a href="demo.html">Demo</a></li><li><a href="teaser.html">Teaser</a></li></ul></nav>
+  </div>
+</header>
+<main id="main">
+
+<section class="hero">
+  <img src="img/hero.jpg" alt="Kai, un joven grumete, mira un mapa mágico que brilla mientras navega entre islas al atardecer">
+  <div class="wrap">
+    <span class="kicker">Aventura · Metroidvania · 3D estilizado</span>
+    <h1>La Leyenda del Grumete</h1>
+    <p class="lead">Un mapa vivo que solo se dibuja cuando demuestras que mereces ser pirata.</p>
+    <ul class="tags"><li>13+</li><li>Exploración</li><li>Sigilo</li><li>Tripulación</li><li>Día / noche</li></ul>
+    <div class="btns">
+      <a class="btn primary" href="bitacora.html">Ver la bitácora</a>
+      <a class="btn ghost" href="concepto.html">Concepto del juego</a>
+    </div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="wrap grid g4">
+    <div class="stat reveal"><span class="icon">🧗</span><b data-count="4">0</b><small>destrezas piratas</small></div>
+    <div class="stat reveal"><span class="icon">🏴‍☠️</span><b data-count="4">0</b><small>tripulantes por reclutar</small></div>
+    <div class="stat reveal"><span class="icon">🏝️</span><b data-count="2">0</b><small>tipos de isla</small></div>
+    <div class="stat reveal"><span class="icon">💎</span><b data-count="1">0</b><small>Corazón de las Mareas</small></div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <span class="eyebrow">Cómo se juega</span>
+    <h2>Elige una destreza</h2>
+    <div class="skills-tabs reveal">
+      <div class="tablist" role="tablist" aria-label="Destrezas de Kai">
+        <button role="tab" aria-selected="true" data-img="img/skill-agilidad.jpg" data-t="Agilidad" data-d="Trepa mástiles, salta acantilados y cruza cornisas para llegar donde nadie llega.">🧗 Agilidad</button>
+        <button role="tab" aria-selected="false" data-img="img/loop-3.jpg" data-t="Combate" data-d="Duelos de espada: lee al rival, bloquea y contraataca. Solo en islas libres.">⚔️ Combate</button>
+        <button role="tab" aria-selected="false" data-img="img/skill-sigilo.jpg" data-t="Sigilo" data-d="Escóndete en barriles y sombras. En las islas de la Corona nunca se pelea de frente.">🕶️ Sigilo</button>
+        <button role="tab" aria-selected="false" data-img="img/loop-1.jpg" data-t="Navegación" data-d="Toma el timón, sigue las corrientes y llega a la siguiente isla del mapa.">⛵ Navegación</button>
+      </div>
+      <div class="tabpanel" role="tabpanel">
+        <div class="tabimg frame"><img src="img/skill-agilidad.jpg" alt="Kai trepando"></div>
+        <div class="tabtext"><h3>Agilidad</h3><p>Trepa mástiles, salta acantilados y cruza cornisas para llegar donde nadie llega.</p><a class="btn dark" href="concepto.html#core-loop">Ver el Core Loop</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="banner" data-parallax>
+  <img src="img/mapa-vivo.jpg" alt="" loading="lazy">
+  <div class="banner-in wrap reveal">
+    <span class="eyebrow" style="color:var(--oro)">El mapa vivo</span>
+    <h2>La tinta responde a tus hazañas</h2>
+    <p>No se explora: se merece.</p>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <span class="eyebrow">Conoce a la tripulación</span>
+    <h2>Kai y sus inadaptados</h2>
+    <div class="crew-strip">
+      <a class="crew-chip reveal" href="concepto.html#personajes" style="--c:#1aa6a0"><img src="img/char-kai.jpg" alt="Kai" loading="lazy"><b>Kai</b><small>Grumete</small></a>
+      <a class="crew-chip reveal" href="concepto.html#personajes" style="--c:#3b6fb5"><img src="img/char-mara.jpg" alt="Mara Nudos" loading="lazy"><b>Mara</b><small>Navegante</small></a>
+      <a class="crew-chip reveal" href="concepto.html#personajes" style="--c:#d08a1d"><img src="img/char-pico.jpg" alt="Pico" loading="lazy"><b>Pico</b><small>Carpintero</small></a>
+      <a class="crew-chip reveal" href="concepto.html#personajes" style="--c:#7a4fb0"><img src="img/char-sombra.jpg" alt="Sombra" loading="lazy"><b>Sombra</b><small>Ladrona</small></a>
+      <a class="crew-chip reveal" href="concepto.html#personajes" style="--c:#4a8f4f"><img src="img/char-bruno.jpg" alt="Bruno" loading="lazy"><b>Bruno</b><small>Forzudo</small></a>
+    </div>
+  </div>
+</section>
+
+<section class="block" style="background:rgba(15,76,92,.08)">
+  <div class="wrap">
+    <span class="eyebrow">Galería</span>
+    <h2>Un archipiélago por descubrir</h2>
+    <div class="mosaic">
+      <button class="m m1 reveal" data-full="img/hero.jpg" data-cap="Kai y el mapa vivo"><img src="img/hero.jpg" alt="Kai y el mapa vivo" loading="lazy"></button>
+      <button class="m m2 reveal" data-full="img/nivel1-escena.jpg" data-cap="Caleta Gris: el mástil roto"><img src="img/nivel1-escena.jpg" alt="Caleta Gris" loading="lazy"></button>
+      <button class="m reveal" data-full="img/tripulacion-barco.jpg" data-cap="La tripulación a bordo"><img src="img/tripulacion-barco.jpg" alt="Tripulación" loading="lazy"></button>
+      <button class="m reveal" data-full="img/mapa-mundo.jpg" data-cap="Pantalla del mapa del mundo"><img src="img/mapa-mundo.jpg" alt="Mapa del mundo" loading="lazy"></button>
+      <button class="m m3 reveal" data-full="img/estilo.jpg" data-cap="Moodboard: paleta, personajes y texturas"><img src="img/estilo.jpg" alt="Moodboard" loading="lazy"></button>
+      <button class="m reveal" data-full="img/kai.jpg" data-cap="Hoja de personaje de Kai"><img src="img/kai.jpg" alt="Kai" loading="lazy" style="object-position:20% 30%"></button>
+      <button class="m reveal" data-full="img/core-loop.jpg" data-cap="El Core Loop sobre el mapa"><img src="img/core-loop.jpg" alt="Core Loop" loading="lazy"></button>
+    </div>
+    <p class="hint">Toca una imagen para verla en grande.</p>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <span class="eyebrow">Explora el sitio</span>
+    <h2>¿A dónde navegamos?</h2>
+    <div class="tiles">
+      <a class="tile reveal" href="concepto.html"><img src="img/mapa-vivo.jpg" alt="" loading="lazy"><span><b>🧭 Concepto</b>Premisa, mecánicas y Core Loop</span></a>
+      <a class="tile reveal" href="bitacora.html"><img src="img/nivel1-flujo.jpg" alt="" loading="lazy"><span><b>📜 Bitácora</b>Cada iteración documentada</span></a>
+      <a class="tile reveal" href="demo.html"><img src="img/nivel1-escena.jpg" alt="" loading="lazy"><span><b>🎮 Demo</b>El estado jugable</span></a>
+      <a class="tile reveal" href="teaser.html"><img src="img/tripulacion-barco.jpg" alt="" loading="lazy"><span><b>🎬 Teaser</b>Semana 11</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="block" style="background:rgba(15,76,92,.08)">
+  <div class="wrap">
+    <span class="eyebrow">Proceso</span>
+    <h2>Así documentamos cada avance</h2>
+    <ol class="cycle">
+      <li class="reveal"><span>🔬</span><b>Probar</b><small>¿Qué queríamos probar?</small></li>
+      <li class="reveal"><span>🔨</span><b>Hacer</b><small>¿Qué implementamos?</small></li>
+      <li class="reveal"><span>👀</span><b>Observar</b><small>¿Qué ocurrió?</small></li>
+      <li class="reveal"><span>💡</span><b>Aprender</b><small>¿Qué descubrimos?</small></li>
+      <li class="reveal"><span>🔁</span><b>Cambiar</b><small>¿Qué mejoramos?</small></li>
+    </ol>
+    <a class="card latest reveal" href="bitacora.html#v0-1">
+      <img src="img/nivel1-flujo.jpg" alt="" loading="lazy">
+      <div><span class="chip warn">Última entrada</span><h3>Graybox v0.1 — Core Loop</h3><p>Primera prueba del ciclo: llegar, superar el reto, ganar habilidad y ver cómo el mapa revela la siguiente ruta.</p><span class="more">Leer entrada →</span></div>
+    </a>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <span class="eyebrow">Tripulación del proyecto</span>
+    <h2>Integrantes</h2>
+    <div class="grid g4">
+      <div class="card member reveal"><div class="avatar">K</div><h4>Katherin Vanessa Cardona Salamanca</h4><small>Diseño del juego · GDD</small></div>
+      <div class="card member reveal"><div class="avatar">C</div><h4>Juan Camilo Tenorio Aristizabal</h4><small>Desarrolador de mecanicas</small></div>
+      <div class="card member reveal"><div class="avatar">?</div><h4><span class="todo">Nombre integrante 3</span></h4><small><span class="todo">Rol</span></small></div>
+      <div class="card member reveal"><div class="avatar">?</div><h4><span class="todo">Nombre integrante 4</span></h4><small><span class="todo">Rol</span></small></div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer>
+  <div class="wrap">
+    <a class="brand" href="index.html">⚓ La Leyenda del Grumete</a>
+    <p>Bitácora de desarrollo · Proyecto de videojuego · Semestre 2026-2</p>
+    <p><small>Documentación en construcción. Se actualiza cada semana.</small></p>
+  </div>
+</footer>
+<script src="js/anime.min.js" defer></script>
+<script src="app.js" defer></script>
+</body>
+</html>
