@@ -353,3 +353,24 @@ section h2.ink::after{transform:scaleX(1)}
   .ink-dot,.glow{display:none}
 }
 .frame img{width:100%}
+
+/* --- CORRECCIÓN DE VIDEOS Y MARCOS --- */
+.frame {
+  background: var(--card) !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.frame img,
+.frame video {
+  width: 100%;
+  height: 220px !important;
+  object-fit: cover;
+  display: block;
+  transition: transform .5s ease;
+}
+
+.frame:hover img,
+.frame:hover video {
+  transform: scale(1.05);
+}
