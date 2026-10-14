@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
- 
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Bitácora · La Leyenda del Grumete</title>
@@ -191,43 +191,59 @@
 
         <article class="entry reveal" id="v0-2">
           <div class="entry-head">
-            <h3>Graybox v0.2 — Core Loop</h3>
+            <h3>Graybox v0.2 Jugable — Core Loop</h3>
             <span><span class="chip">Semana 2-3</span> <span class="chip warn">Proceso de desarrollo</span></span>
           </div>
           <div class="entry-body">
             <div class="qa">
               <div>
                 <h4>1 · ¿Qué queríamos probar?</h4>
-                <p>Queríamos comprobar si el jugador entiende el ciclo básico del juego: </p>
-
-                <p style="margin-left:1.5rem"><strong>Llegar a un lugar →
-                    superar un reto → ganar una habilidad → ver cómo el mapa revela la siguiente ruta, y si esa
-                    recompensa resulta clara y satisfactoria.</strong></p>
+                <p>Para los avances de las semanas 2 y 3, se pulieron las mecánicas principales
+                  ya desarolladas anteriormente, de igual forma se añadieron elementos de interfaz gráfica
+                  junto a creación de nivel y props en las islas. Para esta versión lo que quisimos fué
+                  el tener ya una demo jugable en la que el jugador ya pueda explorar islas y hacer uso de las mecánicas
+                  de juego. </p>
               </div>
               <div>
                 <h4>2 · ¿Qué implementamos?</h4>
-                <p>En esta primera revisión, creamos un graybox para probar el movimiento y algunas mecánicas básicas:
+                <p>En esta segunda revisión se añadieron elementos del mapa, elementos del gameplay, elementos de HUD y
+                  mejoría en mecánicas principales, para darle al jugador ya una primera experiencia jugable:
                 </p>
                 <ul>
-                  <li>Movimiento de Kai: caminar, correr, saltar, trepar y atacar.</li>
-                  <li>Tres pruebas en cualquier orden: agilidad (trepar el mástil), combate (duelo de práctica) y sigilo
-                    (evitar al sereno con farol).</li>
-                  <p style="margin-left:1.5rem">-Para el combate se implementó un sistema de pelea básico con meotodos
-                    de ataque y vida tanto para
-                    el personaje y enemigo.</p>
-                  <p style="margin-left:1.5rem">-Para el sigilo se implementó un sistema de detección de enemigos y un
-                    sistema de alerta mediante una barra de estado para el nivel de detección.</p>
-                  <p style="margin-left:1.5rem">-Para la navegación se implementó un sistema de movimiento en el agua
-                    (plano) para el desplazamiento mediante un barco.</p>
+                  <li>Mejora de mecánicas principales.</li>
+
+                  <li>Se añadieron elementos gráficos/funcionales de HUD y menús. Se añadió una interfaz visual para las estaditicas del jugador
+                    además de incorporar un minimapa con el cual guiarse por la isla.
                   </li>
-                  <li>Al completar las tres pruebas, el mapa se actualiza y se habilita la siguiente isla.</li>
+                  <p style="margin-left:1.5rem">-Menú principal</p>
+                  <p style="margin-left:1.5rem">-Menú de pausa</p>
+                  <p style="margin-left:1.5rem">-HUD in game</p>
+                  <p style="margin-left:1.5rem">-Panel de controles</p>
+                  <p style="margin-left:1.5rem">-Panel de Taller 'Barba Gris'</p>
+                  <p style="margin-left:1.5rem">-Panel de Archipiélago</p>
+                  
+
+                  <li>Se rediseñó la isla principal añadiendo mas elementos visuales que complementen la identidad
+                    de la misma y ayuden a diferenciar cada una de las diferentes zonas con sus respectivas
+                    misiones y objetivos. En cada zona se deberá hacer uso de las mecánicas principales según se requiera.</li>
+                    
+                  <li>Se añadió una nueva isla en donde el jugador puede realizar diferentes misiones.</li>
+
+                  <li>Se añadió un jefe de isla. Al derrotar al jefe y superar la prueba se desbloquerán nuevas misiones y zonas.</li>
+
+                  <li>Se añadió una versión temprana de diferentes sistemas de equipamentos/ayudas.</li>
+                   <p style="margin-left:1.5rem">-Armas</p>
+                  <p style="margin-left:1.5rem">-Bebidas</p>
+                  <p style="margin-left:1.5rem">-Bombas de humo</p>
+                  
+                 <li>Mejora en el sistema de navegación.</li> 
                 </ul>
                 <!-- <p><span class="todo">Ajusten esta lista a lo que realmente tiene su graybox.</span></p> -->
               </div>
               <div>
                 <h4>3 · Evidencia</h4>
                 <div class="evidence">
-                  <figure class="frame"><img src="img/core-loop.jpg" alt="Diagrama del Core Loop de seis pasos"
+                  <figure class="frame"><img src="Me " alt="Diagrama del Core Loop de seis pasos"
                       loading="lazy">
                     <figcaption style="background:var(--card);margin:0;padding:.5rem">Diagrama del Core Loop que guía el
                       graybox.</figcaption>
@@ -310,7 +326,7 @@
         </article>
 
         <div class="empty-next reveal">
-          <strong>Próxima entrada: Graybox v0.2</strong><br>
+          <strong>Próxima entrada: Graybox v0.3</strong><br>
           Cada avance importante deja una pequeña evidencia aquí.
         </div>
       </div>
